@@ -9,9 +9,9 @@ $(document).ready(function(){
 
 var  numClicked = 0;
 $('#testButton').on('click', function(){
-numClicked +=1;
-$('.container').append('<div></div>');
-$('div').append('<p>' +(numClicked) + '</p>')
+numClicked += 1;
+$('.container div').append('<div></div>');
+$('div').append('<p>' + parseInt(numClicked) + '</p>')
 $('div').append('<button id="swapButton">' + "Swap" +'</button>' + '<button id="deleteButton">' + "Delete" +'</button>');
 //$('div').append('<button id="deleteButton">' + "Delete" +'</button>');
 });
